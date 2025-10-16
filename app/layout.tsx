@@ -1,0 +1,19 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Budget Master - Personal Finance Management",
+  description: "Comprehensive budgeting app to manage your finances effectively",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className="antialiased bg-gray-50">{children}</body>
+    </html>
+  );
+}
